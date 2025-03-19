@@ -28,6 +28,10 @@ env:
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
+permissions:
+  contents: write  # 允许 Actions 创建 Release
+  packages: read   # 读取 GitHub Packages
+  
 jobs:
   build:
     runs-on: ubuntu-22.04
